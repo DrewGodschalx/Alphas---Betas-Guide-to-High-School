@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Link to the external CSS file for styling -->
+        <link rel="stylesheet" href="/style.css">
+        <!-- Link to Google Fonts for Material Symbols -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=brand_family" />
+        <!-- internal CSS -->
+        <style></style>
+        <!-- Link to the external JavaScript file & space for internal Js-->
+        <script src="/Home.js"></script>
+    </head>
+    <body id="mode">
+        <!-- Navigation bar section -->
+        <div class="navigation">
+            <div class="navbar full-width">
+                <ul>
+                    <!-- Navigation links for different pages -->
+                    <li><a class="home" href="/English/Home.html">Home</a></li>
+                    <li><a href="/English/classes.html">Classes</a></li>
+                    <li><a href="/English/detention.html">Detention</a></li>
+                    <li><a href="/English/friends.html">Friends</a></li>
+                    <li><a href="/English/tweetmachine.html">Tweet Machine </a></li>
+                    <li><a href="Features.html"> Features</a></li>
+                    <span class="universal">
+                        <li>
+                            <!--Button or toggle light mode-->
+                            <img type="button" class="togglelightmode" onclick="togglelightmode()" src="/Images/contrast_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Theme">
+                            </li>
+                        <!--Js for translation element-->
+                        <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <!-- Font selection dropdown -->
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn">
+                                    <!-- Font selection icon -->
+                                    <img class="font-selection" src="/images/brand_family_24dp_C9C9C9_FILL0_wght400_GRAD0_opsz24.png" alt="Font's">
+                                </div>
+                                <div class="dropdown-content">
+                                    <!-- Links to change font style -->
+                                    <a style="font-family: OpenDyslexic !important;" href="#" onclick="changeFont('OpenDyslexic')">OpenDyslexic</a>
+                                    <a style="font-family: monospace !important;" href="#" onclick="changeFont('monospace')">Monospace</a>
+                                    <a style="font-family: Verdana !important;" href="#" onclick="changeFont('Verdana')">Verdana</a>
+                                    <a style="font-family: Arial !important;" href="#" onclick="changeFont('Arial')">Arial</a>
+                                    <a style="font-family: Georgia !important;" href="#" onclick="changeFont('Georgia')">Georgia</a>
+                                    <a style="font-family: Tahoma !important;" href="#" onclick="changeFont('Tahoma')">Tahoma</a>
+                                    <a style="font-family: Impact !important;" href="#" onclick="changeFont('Impact')">Impact</a>
+                                    <a style="font-family: cursive !important;" href="#" onclick="changeFont('Cursive')">Cursive</a>
+                                    <a style="font-family: serif !important;" href="#" onclick="changeFont('Serif')">Serif</a>
+                                </div>
+                            </div>
+                        </li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <!-- Main content section -->
+        <div style="padding-top: 50px;">
+            <h1 style="text-align: center; font-size: 60px;">Welcome to the Alpha's and Beta's Guide to High School! </h1>
+            <p style="margin: 90px; font-size: 30px;">School can be exciting, challenging, overwhelming, and even a little frustrating at times. Whether you're navigating friendships, handling homework stress, or just trying to make it through the day without embarrassing yourself, we’ve got you covered.</p>
+        </div>  
+        <!-- Polaroid-style container for information in website -->
+        <div class="polaroid-container" style=" display: flex; gap: 40px; justify-content: center; padding-top: 20px;">
+            <div class="polaroid" style="background-color: hsl(184, 53%, 62%);">
+                <!-- Image with zoom effect -->
+                <img style="width:400px; height:auto; border-radius:10px;" class="zoom" src="/images/Kids-Having-Fun-at-school.jpg" alt="Kid's having fun at school">
+                <div class="information" style="border-radius:10px;max-width:100%; text-align: center;">
+                    <!-- Features of the guide -->
+                    <h1>What You’ll Find Here:</h1>
+                    <p style="font-size: 25px;">✅ Classes – Learn how to find them, how many you'll have and where to sit</p>
+                    <p style="font-size: 25px;">✅ Detention – Learn how to avoid it, what happens in it and why it exists</p>
+                    <p style="font-size: 25px;">✅ Friends – Learn how to make them, how many you want and which are true friends</p>
+                    <p style="font-size: 30px;">You’re Not Alone! Every student faces struggles, but with the right strategies, you can survive—and even thrive! Explore our tips, join the conversation, and take control of your school experience.</p>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

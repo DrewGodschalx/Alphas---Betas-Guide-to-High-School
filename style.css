@@ -1,0 +1,329 @@
+/* Body: background color and dyslexic-friendly font */
+body {
+  background-color: rgb(138, 228, 250);
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+/* h1: large heading font size */
+h1 {
+  font-size: 37px;
+}
+
+/* p: paragraph font size */
+p {
+  font-size: 20px;
+}
+
+/* Dyslexic font utility class */
+.dyslexic-font {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+/* Google Translate element in navbar */
+.navbar #google_translate_element {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -10px;
+  margin-top: 17px;
+  white-space: nowrap;
+}
+
+/* Unordered list: remove default styling and prevent wrapping */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* List item link hover: color and background change */
+li a:hover {
+  background-color: rgb(12, 89, 119);
+  text-decoration-color: hsl(219, 96%, 39%);
+  color: hsl(59, 100%, 50%);
+}
+
+/* Navbar unordered list: horizontal layout and style */
+.navbar ul {
+  list-style-type: none;
+  background-color: hsla(0, 100%, 50%, 0.973);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  height: 64px;
+  font-size: 26px;
+}
+
+/* Navbar links: color, padding, alignment */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+/* Navbar link hover: background color */
+.navbar a:hover {
+  background-color: hsla(0, 95%, 29%, 0.493);
+}
+
+/* Navbar list items: horizontal alignment */
+.navbar li {
+  float: left;
+}
+
+/* List item links: set height */
+li a {
+  height: 50px;
+}
+
+/* Full-width fixed element (e.g., navbar) */
+.full-width {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Universal class: float list items right */
+.universal li {
+  float: right;
+}
+
+/* Dropdown menu: absolute positioning */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  z-index: 1;
+  padding: 0;
+}
+
+/* Dropdown content: hidden by default, styled box */
+.dropdown-content {
+  display: none;
+  position: relative;
+  margin-left: -200px;
+  margin-top: 25px;
+  background-color: #f9f9f9;
+  min-width: 10px;
+  width: 220px;
+  box-shadow: 0px 8px 16px 0px hsla(0, 0%, 0%, 0.2);
+  z-index: 1000;
+}
+
+/* Dropdown content links: block layout and color */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown content link hover: background color */
+.dropdown-content a:hover {
+  background-color: hsl(0, 76%, 46%);
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  max-height: 200px;
+  overflow: scroll;
+}
+
+/* Font selection dropdown styling */
+.font-selection {
+  width: auto;
+  height: 40px;
+  position: relative;
+  margin-left: -45px;
+  margin-bottom: -56px;
+  padding-bottom: 25px;
+  background-color: transparent;
+}
+
+/* Language selection dropdown styling */
+.language-selection {
+  width: auto;
+  height: 40px;
+  position: relative;
+  margin-left: -95px;
+  margin-bottom: -56px;
+  padding-bottom: 25px;
+  background-color: transparent;
+}
+
+/* Flexbox layout for text and image alignment */
+.text-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Image styling inside text-with-image */
+.text-with-image img {
+  width: 375px;
+  height: auto;
+  margin-left: 30px;
+  padding-left: 200px;
+  padding-bottom: 250px;
+  padding-top: 50px;
+}
+
+/* Custom scrollbar styling */
+body {
+  --sb-track-color: hsla(231, 100%, 50%, 0.5);
+  --sb-thumb-color: hwb(231 0% 0% / 0.418);
+  --sb-size: 14px;
+}
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
+  border: 1px solid #232E33;
+}
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+/* Zoom effect for images on hover */
+.zoom {
+  padding: 0px;
+  background: none;
+  transition: transform 0.2s;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 3px 4px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.zoom:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(2.4);
+}
+
+/* Information box styling */
+div.information {
+  padding: 50px;
+  width: 430px;
+}
+
+/* Polaroid-style box styling */
+div.polaroid {
+  width: 530px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Light mode toggle button styling */
+.togglelightmode {
+  width: auto;
+  height: 40px;
+  position: relative;
+  margin-left: -90px;
+  margin-bottom: -56px;
+  padding-bottom: 25px;
+  background-color: transparent;
+}
+
+/* Tweet button styling */
+.tweetbuttons {
+  background-color: hsl(290, 55%, 66%);
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Custom content box */
+.custom-content {
+  width: 200px;
+  height: auto;
+}
+
+/* Responsive images in #content */
+#content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Custom content padding */
+.addcudtomcontent {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+/* Custom paragraph padding */
+.custom-paragraph {
+  padding-top: 5px;
+}
+
+/* Image styling for #image */
+#image {
+  width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin: 20px 0;
+}
+
+/* JavaScript section styling */
+.Js-section {
+  display: block;
+  background-color: rgb(116, 252, 54);
+  width: 40%;
+  height: 305px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  color: black;
+}
+.Js-section .text {
+  padding-top: 40px;
+  font-size: 85px;
+  color: black;
+}
+
+/* Section layout and style */
+.section {
+  background: white;
+  margin-bottom: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  color: black;
+}
+.section .text {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Section one: flexible column */
+.section-one {
+  flex: 1;
+  font-size: 20px;
+}
+
+/* Prevent font change for specific elements */
+.no-font-change {
+  font-family: inherit !important;
+}

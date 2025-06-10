@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Link to the external CSS file for styling -->
+        <link rel="stylesheet" href="/style.css">
+        <!-- Link to Google Fonts for Material Symbols -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=brand_family" />
+        <!-- internal CSS -->
+        <style></style>
+        <!-- Link to the external JavaScript file & space for internal Js-->
+        <script src="/Home.js"></script>
+    </head>
+    <body id="mode">
+        <!-- Navigation bar section -->
+        <div class="navigation">
+            <div class="navbar full-width">
+                <ul>
+                    <!-- Navigation links for different pages -->
+                    <li><a class="home" href="/English/Home.html">Home</a></li>
+                    <li><a href="/English/classes.html">Classes</a></li>
+                    <li><a href="/English/detention.html">Detention</a></li>
+                    <li><a href="/English/friends.html">Friends</a></li>
+                    <li><a href="/English/tweetmachine.html">Tweet Machine </a></li>
+                    <li><a href="Features.html"> Features</a></li>
+                    <span class="universal">
+                        <li>
+                            <!--Button or toggle light mode-->
+                            <img type="button" class="togglelightmode" onclick="togglelightmode()" src="/Images/contrast_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Theme">
+                            </li>
+                        <!--Js for translation element-->
+                        <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <!-- Font selection dropdown -->
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn">
+                                    <!-- Font selection icon -->
+                                    <img class="font-selection" src="/images/brand_family_24dp_C9C9C9_FILL0_wght400_GRAD0_opsz24.png" alt="Font's">
+                                </div>
+                                <div class="dropdown-content">
+                                    <!-- Links to change font style -->
+                                    <a style="font-family: OpenDyslexic !important;" href="#" onclick="changeFont('OpenDyslexic')">OpenDyslexic</a>
+                                    <a style="font-family: monospace !important;" href="#" onclick="changeFont('monospace')">Monospace</a>
+                                    <a style="font-family: Verdana !important;" href="#" onclick="changeFont('Verdana')">Verdana</a>
+                                    <a style="font-family: Arial !important;" href="#" onclick="changeFont('Arial')">Arial</a>
+                                    <a style="font-family: Georgia !important;" href="#" onclick="changeFont('Georgia')">Georgia</a>
+                                    <a style="font-family: Tahoma !important;" href="#" onclick="changeFont('Tahoma')">Tahoma</a>
+                                    <a style="font-family: Impact !important;" href="#" onclick="changeFont('Impact')">Impact</a>
+                                    <a style="font-family: cursive !important;" href="#" onclick="changeFont('Cursive')">Cursive</a>
+                                    <a style="font-family: serif !important;" href="#" onclick="changeFont('Serif')">Serif</a>
+                                </div>
+                            </div>
+                        </li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <!-- Main content section -->
+        <div style="padding-top: 50px;">
+            <h1 style="text-align: center; font-size: 60px;">Welcome to the Features Page </h1>
+            <p style="margin: 90px; font-size: 30px;">Here you will find all the infomation you need to navagate this website with ease. You may also find some cool features that you might not have known about before.</p>
+        </div> 
+        <!--section for topic title--> 
+        <div id="mode2" class="section">
+            <div class="Js-section">
+                <h1 class="text" style="display: flex; flex-direction: column; font-size: 60px;">
+                    <div style="margin-left: -100px;">Java</div>
+                    <div style="margin-left: 100px;">Script</div>
+                </h1>
+                
+            </div>
+            <div class="section-one">
+                <!-- section content -->
+                <h2>With the use of JavaScript, many features of this website are possible including:</h2>
+                <ul>
+                    <li>Local Storage</li>
+                    <li>Window.Onload</li>
+                    <li>Theme toggling</li>
+                    <li>Tweet Generator</li>
+                    <li>Font selection</li>
+                    <li>Google Translate integration</li>
+                </ul>
+            </div>
+        </div>
+        <!--information for section one-->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin: 60px 0; padding-left: 10px;">
+                                <div >
+                                    <h1>Local Storage</h1>
+                                    <p>Loal storage is used to store </p>
+                                    <p>information such as the selected </p>
+                                    <p>light mode, font and some information </p>
+                                    <p>from the tweet generator.</p>
+                                </div>
+                            <div>
+                                 <h1>Window.Onload</h1>
+                                 <p> Window.Onload is a function  </p>
+                                 <p>used to execute functions saved </p>
+                                 <p>in local storage or elsewhere such as </p>
+                                 <p>light mode, font and language.</p>
+                            </div>
+                        <div>
+                            <h1>Theme toggling</h1>
+                            <p>Theme toggling is limited</p>
+                            <p>to light and dark mode</p>
+                            <p>By pressing the button </p>
+                            <p>second from the top right </p>
+                            <p>you are able to toggle between</p>
+                            <p>the two.</p>
+                        </div>
+                    <div>
+                        <h1>Tweet Generator</h1>
+                        <p>The tweet generator uses</p>
+                        <p>alot of JS, the buttons,</p>
+                        <p>input bloxes and generation,</p>
+                        <p>all use it. You can generate  </p>
+                        <p>a random tweet or change </p>
+                        <p>individual elements by pressing</p>
+                        <p>the buttons on the top row.</p>
+                        <p> The add custom content button </p>
+                        <p>won't be enabled until all feilds  </p>
+                        <p>are filled.</p>
+                        
+                        
+                    </div>
+                <div>
+                    <h1>Font selection</h1>
+                    <p>The font selection dropdown</p>
+                    <p>uses JS to retrive fonts by name</p>
+                    <p>it then relays the font onto every </p>
+                    <p>text in the website reduardless</p>
+                    <p>of language, or text size.</p>
+                    <p>However the font in the dropdown</p>
+                    <p>remains unchanged, and provides </p>
+                    <p>a preview of the font.</p>
+                </div>
+            <div>
+                <h1>Google Translate integration</h1>
+                <p>With the use of JS the google </p>
+                <p>translate element retrives </p>
+                <p>information from google translate</p>
+                <p>and relays it onto the website.</p>
+                <p>JS also makes the selection and </p>
+                <p>dropdown look the same as </p>
+`               <p>google translate.</p>
+            </div>
+        </div>
+    </body>
+</html>

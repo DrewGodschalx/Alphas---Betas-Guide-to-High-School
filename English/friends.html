@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Link to the external CSS file for styling -->
+        <link rel="stylesheet" href="/style.css">
+        <!-- Link to Google Fonts for Material Symbols -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=brand_family" />
+        <!-- internal CSS -->
+        <style></style>
+        <!-- Link to the external JavaScript file & space for internal Js-->
+        <script src="/Home.js"></script>
+    </head>
+    <body id="mode">
+        <!-- Navigation bar section -->
+        <div class="navigation">
+            <div class="navbar full-width">
+                <ul>
+                    <!-- Navigation links for different pages -->
+                    <li><a class="home" href="/English/Home.html">Home</a></li>
+                    <li><a href="/English/classes.html">Classes</a></li>
+                    <li><a href="/English/detention.html">Detention</a></li>
+                    <li><a href="/English/friends.html">Friends</a></li>
+                    <li><a href="/English/tweetmachine.html">Tweet Machine </a></li>
+                    <li><a href="Features.html"> Features</a></li>
+                    <span class="universal">
+                        <li>
+                            <!--Button or toggle light mode-->
+                            <img type="button" class="togglelightmode" onclick="togglelightmode()" src="/Images/contrast_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="Theme">
+                            </li>
+                        <!--Js for translation element-->
+                        <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        <!-- Font selection dropdown -->
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropbtn">
+                                    <!-- Font selection icon -->
+                                    <img class="font-selection" src="/images/brand_family_24dp_C9C9C9_FILL0_wght400_GRAD0_opsz24.png" alt="Font's">
+                                </div>
+                                <div class="dropdown-content">
+                                    <!-- Links to change font style -->
+                                    <a style="font-family: OpenDyslexic !important;" href="#" onclick="changeFont('OpenDyslexic')">OpenDyslexic</a>
+                                    <a style="font-family: monospace !important;" href="#" onclick="changeFont('monospace')">Monospace</a>
+                                    <a style="font-family: Verdana !important;" href="#" onclick="changeFont('Verdana')">Verdana</a>
+                                    <a style="font-family: Arial !important;" href="#" onclick="changeFont('Arial')">Arial</a>
+                                    <a style="font-family: Georgia !important;" href="#" onclick="changeFont('Georgia')">Georgia</a>
+                                    <a style="font-family: Tahoma !important;" href="#" onclick="changeFont('Tahoma')">Tahoma</a>
+                                    <a style="font-family: Impact !important;" href="#" onclick="changeFont('Impact')">Impact</a>
+                                    <a style="font-family: cursive !important;" href="#" onclick="changeFont('Cursive')">Cursive</a>
+                                    <a style="font-family: serif !important;" href="#" onclick="changeFont('Serif')">Serif</a>
+                                </div>
+                            </div>
+                        </li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main content section -->
+        <div style="padding-top: 50px;">
+            <h1 style="text-align: center; font-size: 60px;">Friends: For Alpha's and Beta's</h1>
+            <p style="margin: 90px; font-size: 30px;">School is way easier when you’ve got good friends by your side. But making friends, keeping them, and figuring out who’s actually there for you? That’s the tricky part. Whether you’re the social butterfly or the quiet observer, this guide will help you navigate the world of friendship's.</p>
+        </div>  
+        
+        <!-- Section with a styled container -->
+        <div class="text-with-image" style="padding-top: 50px;">
+            <div class="content-box" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); width: 1600px; margin: 0 auto; text-align: center; background-color: hsl(271, 67%, 68%); margin-bottom: 70px;">
+                <!-- Tips for making friends -->
+                <h1>How to Make Friends</h1>
+                <p>Making friends isn’t about being the most popular person in school—it’s about finding people you actually connect with.</p>
+                <h1>Here’s how:</h1>
+                <p>🗣 1. Talk to People (Even If It’s Awkward at First)</p>
+                <p>🎭 2. Be Yourself (Seriously)</p>
+                <p>🎮 3. Join a Club, Sport, or Activity</p>
+                <p>🤝 4. Be a Good Listener</p>
+                <p>😆 5. Don’t Force It</p>
+                <h1>How Many Friends Do You Need?</h1>
+                <p>There’s no magic number. Some people thrive with a huge friend group, others are happier with just one or two close friends. Here’s the breakdown:</p>
+                <ul>
+                    <li>Big Friend Groups – More social events, more variety, but sometimes more drama.</li>
+                    <li>Small Circles – Deeper connections, more trust, but fewer people to rely on.</li>
+                    <li>A Mix of Both – Some casual friends, a few close ones—best of both worlds.</li>
+                </ul>
+                <p>At the end of the day, quality > quantity. A few real friends are better than a hundred fake ones.</p>
+            </div>
+        </div>
+        
+        <!-- Polaroid-style container -->
+        <div class="polaroid-container" style="display: flex; gap: 40px; justify-content: center; padding-top: 20px;">
+            <!-- True friends section -->
+            <div class="polaroid" style="background-color: hsl(184, 53%, 62%);">
+                <img style="width: 240px; height: auto; border-radius: 10px;" class="zoom" src="https://www.shutterstock.com/image-photo/group-friends-enjoying-sunset-goa-260nw-1932886277.jpg" alt="Group of Friends">
+                <div class="information" style="border-radius: 10px; text-align: center;">
+                    <h1>✅ True Friends:</h1>
+                    <p>✔ Support you even when things aren’t going great.</p>
+                    <p>✔ Keep your secrets and don’t talk behind your back.</p>
+                    <p>✔ Respect your boundaries and don’t pressure you into things.</p>
+                    <p>✔ Are happy for your success, not jealous.</p>  
+                </div>
+            </div> 
+            
+            <!-- Fake friends section -->
+            <div class="polaroid" style="background-color: hsl(184, 53%, 62%);">
+                <img style="border-radius: 10px; width: auto; height: 220px;" class="zoom" src="https://frogmighster.wordpress.com/wp-content/uploads/2014/04/mp9004484681.jpg?w=300" alt="Kid Writing Lines">
+                <div class="information" style="text-align: center;">
+                    <h1>❌ Fake Friends:</h1>
+                    <p>✘ Only talk to you when they need something.</p>
+                    <p>✘ Spread rumors or gossip about you.</p>  
+                    <p>✘ Make you feel bad, embarrassed, or left out.</p>
+                    <p>✘ Disappear when you need them most.</p>
+                    <p>If someone constantly brings negativity into your life, they’re not a real friend. It’s okay to let go of toxic friendships.</p>
+                </div>
+            </div>  
+        </div>
+        
+        <!-- Final thought section -->
+        <div style="text-align: center;">
+            <h1>Final Thought: Friends Make School Better</h1>
+            <p style="font-size: 30px;">Good friends make school bearable—even fun. There for the inside jokes, the tough days, and everything in between. Choose them wisely, be a good friend yourself, and remember: it’s about who you have, not how many.</p>
+        </div>
+    </body>
+</html>
+
